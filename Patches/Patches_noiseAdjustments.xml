@@ -169,6 +169,150 @@
     </match>
   </Operation>
 
+  <!--Realistic Human Sounds (Continued)-->
+  <Operation Class="JPTools.PatchOperationFindModById">
+    <mods>
+      <li>Mlie.RealisticHumanSounds</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Male1_Wounded"]</xpath>
+          <value>
+            <overrideNoiseVolume>10</overrideNoiseVolume>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Male1_Death"]</xpath>
+          <value>
+            <overrideNoiseVolume>7</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Male2_Wounded"]</xpath>
+          <value>
+            <overrideNoiseVolume>10</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Male2_Death"]</xpath>
+          <value>
+            <overrideNoiseVolume>7</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Male3_Wounded"]</xpath>
+          <value>
+            <overrideNoiseVolume>10</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Male3_Death"]</xpath>
+          <value>
+            <overrideNoiseVolume>7</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Female1_Wounded"]</xpath>
+          <value>
+            <overrideNoiseVolume>10</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Female1_Death"]</xpath>
+          <value>
+            <overrideNoiseVolume>7</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Female2_Wounded"]</xpath>
+          <value>
+            <overrideNoiseVolume>10</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Female2_Death"]</xpath>
+          <value>
+            <overrideNoiseVolume>7</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Female3_Wounded"]</xpath>
+          <value>
+            <overrideNoiseVolume>10</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Female3_Death"]</xpath>
+          <value>
+            <overrideNoiseVolume>7</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Human_Wounded"]</xpath>
+          <value>
+            <overrideNoiseVolume>10</overrideNoiseVolume>
+          </value>
+        </li>
+		<li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pawn_Human_Death"]</xpath>
+          <value>
+            <overrideNoiseVolume>7</overrideNoiseVolume>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+  <!--No Water, No Life (Continued)-->
+  <Operation Class="JPTools.PatchOperationFindModById">
+    <mods>
+      <li>Mlie.NoWaterNoLife</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Ingest_Water"]</xpath>
+          <value>
+            <overrideNoiseVolume>0.5</overrideNoiseVolume>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Pour_Water"]</xpath>
+          <value>
+            <overrideNoiseVolume>1</overrideNoiseVolume>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+  <!--RimJobWorld-->
+  <Operation Class="JPTools.PatchOperationFindModById">
+    <mods>
+      <li>rim.job.world</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Sex"]</xpath>
+          <value>
+            <overrideNoiseVolume>6</overrideNoiseVolume>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/SoundDef[defName="Cum"]</xpath>
+          <value>
+            <overrideNoiseVolume>0.5</overrideNoiseVolume>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+    
   <!--Must be at the end-->
   <Operation Class="PatchOperationAttributeAdd">
     <xpath>/Defs/SoundDef/overrideNoiseVolume/..</xpath>
